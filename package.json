@@ -1,0 +1,21 @@
+{
+  "name": "first",
+  "displayName": "First Snippets",
+  "description": "Набор пользовательских сниппетов для VS Code",
+  "version": "1.0.0",
+  "publisher": "your-publisher-name",
+  "engines": {
+    "vscode": "^1.78.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "cpp", 
+        "path": "./snippets/snippets.code-snippets"
+      }
+    ]
+  }
+}

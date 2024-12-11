@@ -1,0 +1,77 @@
+{
+    "C++ Main Function": {
+      "prefix": "cppmain",
+      "body": [
+        "#include <iostream>",
+        "",
+        "int main() {",
+        "    $1",  // Место для кода пользователя
+        "    return 0;",
+        "}",
+        "$0"  // Место, куда курсор будет перемещен после вставки
+      ],
+      "description": "Базовая функция main для C++"
+    },
+  
+    "C++ Class Template": {
+      "prefix": "cppclass",
+      "body": [
+        "#include <iostream>",
+        "",
+        "class $1 {",
+        "public:",
+        "    $1() { $2 }",  // Конструктор
+        "    void $3() {",
+        "        $4",
+        "    }",
+        "};",
+        "",
+        "int main() {",
+        "    $1 obj;",
+        "    obj.$3();",
+        "    return 0;",
+        "}",
+        "$0"
+      ],
+      "description": "Шаблон для создания класса C++"
+    },
+  
+    "C++ If Statement": {
+      "prefix": "cppif",
+      "body": [
+        "if ($1) {",
+        "    $2",  // Место для кода
+        "} else {",
+        "    $3",  // Место для кода
+        "}"
+      ],
+      "description": "Шаблон if-else в C++"
+    },
+  
+    "C++ For Loop": {
+      "prefix": "cppfor",
+      "body": [
+        "for (int i = 0; i < $1; i++) {",
+        "    $2",  // Место для кода
+        "}"
+      ],
+      "description": "Шаблон цикла for в C++"
+    },
+  
+    "C++ Function Template": {
+      "prefix": "cppfunc",
+      "body": [
+        "$1($2) {",
+        "    $3",
+        "}",
+        "",
+        "int main() {",
+        "    $1($4);",
+        "    return 0;",
+        "}",
+        "$0"
+      ],
+      "description": "Шаблон функции C++"
+    }
+  }
+  
